@@ -3,8 +3,6 @@ import java.util.Scanner;
 public abstract class Profile 
 {
 
-    public abstract void displayProfile(); //Various Profiles will implement their own version of this method, therefore I have set it as Abstract
-
     private String hospitalID;
     private String emailAddress;
     private String userPassword;
