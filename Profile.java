@@ -4,23 +4,35 @@ public abstract class Profile
 {
 
     private String hospitalID;
+    private String name;
     private String emailAddress;
     private String userPassword;
     private String userRole;
 
-    private static final String DEFAULT_PASSWORD = "I_l0ve_working_4_3ver";
+    protected static final String DEFAULT_PASSWORD = "I_l0ve_working_4_3ver";
 
-    public Profile(String hospitalID, String userPassword, String emailAddress, String userRole) 
+    public Profile(String hospitalID, String name, String emailAddress, String userPassword, String userRole) 
     {
         this.hospitalID = hospitalID;
-        this.userPassword = userPassword;
+        this.name = name;
         this.emailAddress = emailAddress;
+        this.userPassword = userPassword;
         this.userRole = userRole;
     }
 
     public String getHospitalID() 
     {
         return hospitalID;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String newName)
+    {
+        this.name = newName;
     }
 
     public String getEmailAddress()

@@ -1,41 +1,14 @@
-public class User
+public abstract class User extends Profile
 {
-    private int userID; //Unique integer identifier for each user, a.k.a UserName
+    public abstract void displayProfile(); //Various Profiles will implement their own version of this method, therefore I have set it as Abstract
 
-    private String firstName; //First name
-    private String lastName; //Last name
-
-    private String defaultPW; //Default password for all users which they can then change to their liking
-    private String role; //Patient, Doctor, Pharmacist, Admin as part of the project
-
-
-
-    
-    User(int userID, String firstName, String lastName, String role)
+    public User(String hospitalID, String name, String emailAddress, String userRole)
     {
-        this.userID = userID;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.defaultPW = "I_l0ve_working_4_3ver";
-
+        super(hospitalID, name, emailAddress, DEFAULT_PASSWORD , userRole);
     }
 
-    public void setuserID(int userID)
+    public void displayMessage()
     {
-        this.userID = userID;
+        System.out.println("Welcome, " + getUserRole() + "!");
     }
-    public int getUserID()
-    {
-        return userID;
-    }
-
-    public String getFirstName()
-    {
-        return firstName;
-    }
-    public String getLastName()
-    {
-        return lastName;
-    }
-
 }
