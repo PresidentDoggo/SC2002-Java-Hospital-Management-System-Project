@@ -62,10 +62,5 @@ public class MedicalRecord
 
         return record;
     }
-
-
-
-
-
-
+    
 }
