@@ -1,3 +1,4 @@
-public class Appointment {
+public class Appointment 
+{
     
 }

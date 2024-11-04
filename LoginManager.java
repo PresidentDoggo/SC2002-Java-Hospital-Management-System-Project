@@ -1,3 +1,4 @@
-public class LoginManager {
+public class LoginManager 
+{
     
 }
