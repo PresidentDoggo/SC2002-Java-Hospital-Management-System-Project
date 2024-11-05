@@ -1,3 +1,4 @@
-public class Inventory {
+public class Inventory 
+{
     
 }

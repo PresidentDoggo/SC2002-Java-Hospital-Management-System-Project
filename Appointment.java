@@ -1,8 +1,8 @@
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 
-public class Appointment {
+public class Appointment 
+{
     
     private String appointmentID;
     private String patientID;

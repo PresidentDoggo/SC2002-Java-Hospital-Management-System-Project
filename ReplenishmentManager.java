@@ -1,3 +1,4 @@
-public class ReplenishmentManager {
+public class ReplenishmentManager 
+{
     
 }
