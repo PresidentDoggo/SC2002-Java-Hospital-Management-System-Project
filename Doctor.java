@@ -1,22 +1,7 @@
-public class Doctor extends Profile
-{
-    public Doctor(String hospitalID, String name, String emailAddress) 
-    {
-        super(hospitalID, name, emailAddress, DEFAULT_PASSWORD , "Doctor");
+class Doctor extends Staff {
+
+    public Doctor(String userID, String name, int age, String gender, String email, int contactNumber, String userRole) {
+        super(userID, name, age, gender, email, contactNumber, userRole);
     }
 
-    
-    public void displayProfile() 
-    {
-        System.out.println("Welcome to the BrainRot Hospital!");
-        System.out.println("Glad to See You  Mr/Ms " + getName() + "!");
-
-        System.out.println("1. View Patient Medical Records");
-        System.out.println("2. Update Patient Medical Records");
-        System.out.println("3. View Schedule");
-        System.out.println("4. Set Availability");
-        System.out.println("5. Change Password");
-        System.out.println("6. Logout");
-
-    }
 }
