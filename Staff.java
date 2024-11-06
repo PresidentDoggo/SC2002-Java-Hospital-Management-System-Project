@@ -1,3 +1,4 @@
-public class Staff {
+public class Staff 
+{
     
 }
