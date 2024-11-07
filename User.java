@@ -54,7 +54,5 @@ public abstract class User
     {
         return userRole;
     }
-
-    public abstract void displayMenu();
 }
 
