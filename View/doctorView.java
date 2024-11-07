@@ -4,6 +4,11 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class doctorView implements generalView{
+    public boolean useViewer(){
+        displayMenu();
+        boolean ret = (getOperation() != 8);
+        return ret;
+    }
     public void displayMenu(){
         System.out.println("[-------------------------------------------]");
         System.out.println("| 1. View Patient Medical Records           |");
