@@ -1,5 +1,5 @@
 package View;
-public interface generalView{
+public abstract class generalView{
 
     // We have a controller for every Object
     // The flow should look somewhat like this
@@ -10,12 +10,12 @@ public interface generalView{
     // Call the controller based on what operation we given
     // Return False and go back to the login page if the user logged out
 
-    // private MedicalRecordController MRC = new MedicalRecordController();
-    // private AppointmentController AC = new AppointmentController();
-    // private AppointmentOutcomeController AOC = new AppointmentOutcomeController();
-    // private InventoryController IC = new InventoryController();
-    // private ReplenishmentController RC = new ReplenishmentController();
-    // private StaffListController SLC = new StaffListController();
+    // protected MedicalRecordController MRC = new MedicalRecordController();
+    // protected AppointmentController AC = new AppointmentController();
+    // protected AppointmentOutcomeController AOC = new AppointmentOutcomeController();
+    // protected InventoryController IC = new InventoryController();
+    // protected ReplenishmentController RC = new ReplenishmentController();
+    // protected StaffListController SLC = new StaffListController();
 
     public abstract boolean useViewer();
     public abstract void displayMenu();

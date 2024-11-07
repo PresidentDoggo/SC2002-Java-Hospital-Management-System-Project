@@ -3,7 +3,7 @@ package View;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class doctorView implements generalView{
+public class doctorView extends generalView{
     public boolean useViewer(){
         displayMenu();
         boolean ret = (getOperation() != 8);

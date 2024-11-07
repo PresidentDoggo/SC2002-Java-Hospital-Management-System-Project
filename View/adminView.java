@@ -3,7 +3,7 @@ package View;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class adminView implements generalView{
+public class adminView extends generalView{
     public boolean useViewer(){
         displayMenu();
         int operation = getOperation();

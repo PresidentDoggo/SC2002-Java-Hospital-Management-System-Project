@@ -3,7 +3,7 @@ package View;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class pharmacistView implements generalView{
+public class pharmacistView extends generalView{
     public boolean useViewer(){
         displayMenu();
         boolean ret = (getOperation() != 5);
