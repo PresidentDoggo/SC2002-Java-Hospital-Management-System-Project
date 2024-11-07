@@ -6,7 +6,11 @@ import java.util.Scanner;
 public class adminView implements generalView{
     public boolean useViewer(){
         displayMenu();
-        boolean ret = (getOperation() != 5);
+        int operation = getOperation();
+        boolean ret = (operation != 5);
+        /*
+         * here we call the controllers based on the operation given
+         */
         return ret;
     }
     public void displayMenu(){

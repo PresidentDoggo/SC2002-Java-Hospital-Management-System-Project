@@ -7,6 +7,9 @@ public class pharmacistView implements generalView{
     public boolean useViewer(){
         displayMenu();
         boolean ret = (getOperation() != 5);
+        /*
+         * here we call the controllers based on the operation given
+         */
         return ret;
     }
     public void displayMenu(){
