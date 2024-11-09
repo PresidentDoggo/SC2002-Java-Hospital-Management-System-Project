@@ -1,3 +1,4 @@
+package hmsystem.models;
 public abstract class User
 {
     private String userID;

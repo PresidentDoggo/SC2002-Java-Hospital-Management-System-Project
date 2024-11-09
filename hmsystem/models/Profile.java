@@ -1,3 +1,4 @@
+package hmsystem.models;
 import java.util.Scanner;
 
 public abstract class Profile 
