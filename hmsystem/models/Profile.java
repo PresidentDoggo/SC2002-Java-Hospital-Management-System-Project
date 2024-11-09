@@ -45,11 +45,6 @@ public abstract class Profile
         return userPassword;
     }
 
-    public void setPassword(String newPassword) {
-        this.userPassword = newPassword;
-    }
-
-
     public void setEmailAddress(String emailAddress)
     {
         this.emailAddress = emailAddress;
