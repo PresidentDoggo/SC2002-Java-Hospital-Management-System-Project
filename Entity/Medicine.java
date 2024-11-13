@@ -1,13 +1,41 @@
 package Entity;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Medicine {
     private String name;
     private int alertLine, stock, request = 0;
 
-    public Medicine(String name, int alertLine, int stock, int request) {
-        this.name = name;
-        this.alertLine = alertLine;
-        this.stock = stock;
-        this.request = request;
+    public Medicine() {
+        build();
+    }
+
+    private void build() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter medicine name: ");
+        this.name = sc.nextLine();
+
+        this.alertLine = inputInt(sc, "Enter alert line: ");
+        this.stock = inputInt(sc, "Enter stock: ");
+        
+        sc.close();
+    }
+
+    private int inputInt(Scanner sc, String output) {
+        int value = 0;
+        while (true) {
+            System.out.print(output);
+            try {
+                value = sc.nextInt();
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input. Please enter a valid integer.");
+                sc.next();
+            }
+        }
+        return value;
     }
 
     public String getName() {
