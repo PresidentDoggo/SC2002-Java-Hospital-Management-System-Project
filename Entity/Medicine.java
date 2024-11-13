@@ -23,10 +23,10 @@ public class Medicine {
         sc.close();
     }
 
-    private int inputInt(Scanner sc, String output) {
+    private int inputInt(Scanner sc, String message) {
         int value = 0;
         while (true) {
-            System.out.print(output);
+            System.out.print(message);
             try {
                 value = sc.nextInt();
                 break;
