@@ -1,4 +1,4 @@
-package Entity;
+package hmsystem.models;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

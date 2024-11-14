@@ -1,3 +1,4 @@
+package hmsystem.models;
 public class MedicalDiagnosis //This Class represents each diagnosis entry in a patient's medical record
 {
     private String patientDiagnosis; //Diagnosis for the patient

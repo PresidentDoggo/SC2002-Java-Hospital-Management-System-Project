@@ -1,11 +1,13 @@
-package Entity;
+package hmsystem.models;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
+import hmsystem.models.enums.Frequency;
+
 import java.io.Serializable;
-import Enum.Frequency;
 
 public class Prescription implements Serializable{
     private Calendar startDate, endDate;
