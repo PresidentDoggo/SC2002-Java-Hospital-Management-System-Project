@@ -14,7 +14,7 @@ public class Appointment {
         this.doctorID = doctorID;
         this.patientID = patientID;
         this.timeSlot = timeSlot;
-        this.status = AppointmentStatus.PENDING; // Default for new Appointments
+        this.status = AppointmentStatus.PENDING;
     }
 
     public String getDoctorID() {
