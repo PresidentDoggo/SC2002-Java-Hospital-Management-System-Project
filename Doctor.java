@@ -8,9 +8,9 @@ public class Doctor extends User
     }
 
     @Override
-    public void displayMenu() //Different Implementation based on User's Role 
+    public void displayMenu() // Different Implementation based on User's Role 
     {
-       displayMessage(); //Welcome message from User class
+       displayMessage(); // Welcome message from User class
 
         System.out.println("1. View Patient Medical Records");
         System.out.println("2. Update Patient Medical Records");
