@@ -1,3 +1,4 @@
+package hmsystem.models;
 public class Patient extends User {
 
     private String dateOfBirth;
