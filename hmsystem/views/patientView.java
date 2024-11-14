@@ -1,4 +1,4 @@
-package View;
+package hmsystem.views;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

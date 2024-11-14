@@ -1,5 +1,7 @@
 import java.util.List;
 
+import hmsystem.models.Appointment;
+
 public interface AppointmentManagerPatient {
 
     List<Appointment> viewAvailableSlots(String doctorID);

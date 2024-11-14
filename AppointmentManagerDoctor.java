@@ -1,5 +1,7 @@
 import java.util.List;
 
+import hmsystem.models.Appointment;
+
 public interface AppointmentManagerDoctor {
 
     List<Appointment> getDoctorSchedule(String doctorID);

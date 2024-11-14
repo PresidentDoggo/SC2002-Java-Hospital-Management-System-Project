@@ -1,5 +1,7 @@
 import java.util.List;
 
+import hmsystem.models.Appointment;
+
 public class AppointmentManager
         implements AppointmentManagerDoctor, AppointmentManagerPatient, AppointmentManagerAdmin {
 

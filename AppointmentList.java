@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import hmsystem.models.Appointment;
+
 public class AppointmentList {
 
     private List<Appointment> appointments;
