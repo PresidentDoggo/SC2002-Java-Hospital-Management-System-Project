@@ -1,5 +1,6 @@
 package hmsystem.views;
-public abstract class generalView{
+public abstract class generalView
+{
 
     // We have a controller for every Object
     // The flow should look somewhat like this

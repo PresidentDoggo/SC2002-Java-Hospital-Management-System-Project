@@ -3,7 +3,8 @@ package hmsystem.views;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class patientView extends generalView{
+public class patientView extends generalView
+{
     public boolean useViewer(){
         displayMenu();
         boolean ret = (getOperation() != 9);

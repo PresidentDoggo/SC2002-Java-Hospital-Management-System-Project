@@ -3,7 +3,8 @@ package hmsystem.views;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class adminView extends generalView{
+public class adminView extends generalView
+{
     public boolean useViewer(){
         displayMenu();
         int operation = getOperation();
