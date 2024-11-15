@@ -27,7 +27,8 @@ public class doctorView extends generalView
         System.out.println("| 8. Logout                                 |");
         System.out.println("[-------------------------------------------]");
     }
-    public int getOperation() {
+    public int getOperation() 
+    {
         Scanner in = new Scanner(System.in);
         int op = -1; 
         while (true) 
