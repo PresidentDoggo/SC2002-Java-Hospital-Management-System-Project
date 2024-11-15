@@ -13,7 +13,8 @@ public class patientView extends generalView
          */
         return ret;
     }
-    public void displayMenu(){
+    public void displayMenu()
+    {
         System.out.println("[-------------------------------------------]");
         System.out.println("| 1. View Medical Record                    |");
         System.out.println("| 2. Update Personal Information            |");
@@ -26,19 +27,27 @@ public class patientView extends generalView
         System.out.println("| 9. Logout                                 |");
         System.out.println("[-------------------------------------------]");
     }
-    public int getOperation() {
+    public int getOperation() 
+    {
         Scanner in = new Scanner(System.in);
         int op = -1; 
-        while (true) {
+        while (true) 
+        {
             System.out.print("Please enter your choice (1-9): ");
-            try {
+            try 
+            {
                 op = in.nextInt();
-                if (op >= 1 && op <= 9) {
+                if (op >= 1 && op <= 9) 
+                {
                     break;
-                } else {
+                } 
+                else 
+                {
                     System.out.println("Invalid choice. Please enter a number between 1 and 9.");
                 }
-            } catch (InputMismatchException e) {
+            } 
+            catch (InputMismatchException e) 
+            {
                 System.out.println("Invalid input. Please enter a valid integer.");
                 in.next(); 
             }

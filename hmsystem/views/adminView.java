@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class adminView extends generalView
 {
-    public boolean useViewer(){
+    public boolean useViewer()
+    {
         displayMenu();
         int operation = getOperation();
         boolean ret = (operation != 5);
@@ -14,7 +15,8 @@ public class adminView extends generalView
          */
         return ret;
     }
-    public void displayMenu(){
+    public void displayMenu()
+    {
         System.out.println("[-------------------------------------------]");
         System.out.println("| 1. View and Manage Hospital Staff         |");
         System.out.println("| 2. View Appointments details              |");
@@ -23,19 +25,27 @@ public class adminView extends generalView
         System.out.println("| 5. Logout                                 |");
         System.out.println("[-------------------------------------------]");
     }
-    public int getOperation() {
+    public int getOperation() 
+    {
         Scanner in = new Scanner(System.in);
         int op = -1; 
-        while (true) {
+        while (true) 
+        {
             System.out.print("Please enter your choice (1-5): ");
-            try {
+            try 
+            {
                 op = in.nextInt();
-                if (op >= 1 && op <= 8) {
+                if (op >= 1 && op <= 8) 
+                {
                     break;
-                } else {
+                } 
+                else 
+                {
                     System.out.println("Invalid choice. Please enter a number between 1 and 5.");
                 }
-            } catch (InputMismatchException e) {
+            } 
+            catch (InputMismatchException e) 
+            {
                 System.out.println("Invalid input. Please enter a valid integer.");
                 in.next(); 
             }

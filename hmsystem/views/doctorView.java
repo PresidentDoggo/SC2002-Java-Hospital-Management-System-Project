@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class doctorView extends generalView
 {
-    public boolean useViewer(){
+    public boolean useViewer()
+    {
         displayMenu();
         boolean ret = (getOperation() != 8);
         /*
@@ -13,7 +14,8 @@ public class doctorView extends generalView
          */
         return ret;
     }
-    public void displayMenu(){
+    public void displayMenu()
+    {
         System.out.println("[-------------------------------------------]");
         System.out.println("| 1. View Patient Medical Records           |");
         System.out.println("| 2. Update Patient Medical Records         |");
@@ -28,16 +30,23 @@ public class doctorView extends generalView
     public int getOperation() {
         Scanner in = new Scanner(System.in);
         int op = -1; 
-        while (true) {
+        while (true) 
+        {
             System.out.print("Please enter your choice (1-8): ");
-            try {
+            try 
+            {
                 op = in.nextInt();
-                if (op >= 1 && op <= 8) {
+                if (op >= 1 && op <= 8) 
+                {
                     break;
-                } else {
+                } 
+                else 
+                {
                     System.out.println("Invalid choice. Please enter a number between 1 and 8.");
                 }
-            } catch (InputMismatchException e) {
+            } 
+            catch (InputMismatchException e) 
+            {
                 System.out.println("Invalid input. Please enter a valid integer.");
                 in.next(); 
             }
